@@ -18,7 +18,7 @@ Through analysis of the data, we seek to identify patterns in the habits of the 
 
 ## Data Preparations
 ### Data Sources
-Historical trip data of the fictional company Cyclistic is made available from [divvy_tripdata][https://divvy-tripdata.s3.amazonaws.com/index.html].  For the purposes of this study, the last 12 months of trip data have been used (dated from July 2023 to June 2024).  This data is made publicly available by Motivate International Inc. under this [licence agreement][https://divvybikes.com/data-license-agreement].
+Historical trip data of the fictional company Cyclistic is made available from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html).  For the purposes of this study, the last 12 months of trip data have been used (dated from July 2023 to June 2024).  This data is made publicly available by Motivate International Inc. under this [licence agreement](https://divvybikes.com/data-license-agreement).
 
 ### Our first look at the data
 The data is comprised of 12 .Csv files each containing the trip data from a month of operations. Each row entry contains up to 13 columns of fields, each column described below:
@@ -42,7 +42,14 @@ _member_casual_     |    	 	 Type of rider: Member or Casual
 ### Data Integrity
 Before making use of any data, it is important to ensure that it can be relied upon.
 
-The City of Chicago releases data on bike stations [here][https://data.cityofchicago.org/Transportation/Divvy-Bicycle-Stations-Map/bk89-9dk7], so it can be seen that the data is in use and should not be incomplete or inaccurate. The data is sourced from its original creator, so we can expect it to be first party data.  Some personal data is omitted from the resource to ensure identifiable information cannot be accessed but otherwise the listed data is comprehensive.  To ensure the relevance of information, all data is the most recently made available and is sourced from Divvy Bikes and the City of Chicago.
+1. Reliability
+   * The City of Chicago releases data on bike stations [here](https://data.cityofchicago.org/Transportation/Divvy-Bicycle-Stations-Map/bk89-9dk7), so it can be seen that the data is in use and should not be incomplete or inaccurate.
+2.Originality
+   *   The data is sourced from its original creator, so we can expect it to be first party. data.
+3. Comprehensive and Current:
+   * Some personal data is omitted from the resource to ensure identifiable information cannot be accessed but otherwise the listed data is comprehensive.  To ensure the relevance of information, all data is the most recently made available and is sourced from Divvy Bikes and the City of Chicago.
+4. Cited
+   * Data cited above.
 
 ## Data Processing
 ### Data Cleaning (performed in R)
@@ -70,8 +77,12 @@ Before performing any analysis, the data is checked for any inconsistencies in f
 * **[1]**: if a ride does not record when it has started or ended it is safe to assume that some error has occured and the entry should be removed since it is likely to contain incorrect information
 * **[2]**: NA coordinates were found to occur in some entries.  Further investigation revealed that where the coordinates were recorded as NA, the trip length was always exactly 1 day and 59 minutes, signifying some timeout feature ending trips after a set time without recording the coordinates.  These entries were removed as they have inaccurate records.
 
-##Data Manipulation
+## Data Manipulation
 Two additional columns were added to the data:
 * _tripDuration_ representing the time elapsed from the start to the finish of the bike trip.
-* _distTravelled_ representing the magnitude of distance travelled from start to finish,.
-Outlier entries where the values calculated above where unrealistically high were removed as these were likely due to rider not returning to a station after completing their trip.
+* _distTravelled_ representing the magnitude of distance travelled from start to finish.
+
+Outlier entries where the values calculated above where uncharacteristically high were removed as these were likely due to the rider not returning to a station after completing their trip.
+
+## Data Analysis
+Now that the data has been reviewed for its integrity and has been processed we can now proceed with the analysis of the data.  Please refer to the R markdown analysis, to see how calculations were performed.
