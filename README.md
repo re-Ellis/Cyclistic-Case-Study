@@ -86,3 +86,29 @@ Outlier entries where the values calculated above where uncharacteristically hig
 
 ## Data Analysis
 Now that the data has been reviewed for its integrity and has been processed we can now proceed with the analysis of the data.  Please refer to the R markdown analysis, to see how calculations were performed.
+
+### Basic data Insights
+
+### When Are Riders Using the Service?
+The following data visualisations seperates rides by a specified time-frame so that we can see how often the service is utilised at different times of the year.
+
+Separating usage by months of the year:
+![Ride-Share Usage by Months of the Year](https://github.com/user-attachments/assets/617f2087-8461-4500-baed-e159e151f54c)
+We can see that both groups of users follow the same trend of prefering to use the bike-share during the hotter months of the year, with the number of casual rides dropping very low during the colder months.
+
+Separating usage by Days of the week:
+![Ride-Share Usage by Days of the Week](https://github.com/user-attachments/assets/58039c2c-07e0-4724-8600-dd7ae69369c9)
+
+
+![Ride-Share Usage by Hours of the Day](https://github.com/user-attachments/assets/a0e34066-67e6-4d3b-a036-3b800fedc71c)
+
+
+
+
+![Bike Type Proportions - Member](https://github.com/user-attachments/assets/ce48fd8f-7046-45ef-b8cc-97a77674d3ff)
+![Bike Type Proportions - Casual](https://github.com/user-attachments/assets/20277bdb-b56e-49c8-b157-84b60d63a8e2)
+![Average Trip Length](https://github.com/user-attachments/assets/ec36af4a-76a7-47fe-ba64-596c543415e6)
+![Average Distance Travelled](https://github.com/user-attachments/assets/b8830e67-a3cf-42ed-b7fb-46cd4aa47ef9)
+
+![Most Popular Stations - Member Users](https://github.com/user-attachments/assets/64d10a9c-8194-421c-861b-2118bc6c0990)
+![Most Popular Stations - Casual Users](https://github.com/user-attachments/assets/aad61426-065c-45a9-b3f3-dadba8882230)
