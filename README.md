@@ -98,8 +98,10 @@ We can see that both groups of users follow the same trend of prefering to use t
 
 Separating usage by Days of the week:
 ![Ride-Share Usage by Days of the Week](https://github.com/user-attachments/assets/58039c2c-07e0-4724-8600-dd7ae69369c9)
+Members tend to use the service more often during the week, but slightly less often on the weekend, conversely casual users tend to use the services more often on the weekends.  This is likely indicative of casual users ususing the services more often for leisure activities on weekends, whereas members use the services more often during the week.
 
 
+Separating usage by Days of the week:
 ![Ride-Share Usage by Hours of the Day](https://github.com/user-attachments/assets/a0e34066-67e6-4d3b-a036-3b800fedc71c)
 
 
