@@ -103,7 +103,7 @@ Members tend to use the service more often during the week, but slightly less of
 
 Separating usage by hours of the day:
 ![Ride-Share Usage by Hours of the Day](https://github.com/user-attachments/assets/a0e34066-67e6-4d3b-a036-3b800fedc71c)
-Member'Member's usage of the services have two profound peaks: at 
+Member's usage of the services have two profound peaks: during the 8 o'clock hour and 9 o'clock hour.  
 
 ![Bike Type Proportions - Member](https://github.com/user-attachments/assets/ce48fd8f-7046-45ef-b8cc-97a77674d3ff)
 ![Bike Type Proportions - Casual](https://github.com/user-attachments/assets/20277bdb-b56e-49c8-b157-84b60d63a8e2)
